@@ -1,0 +1,8 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+<h1> Order Confirmed for {{invoice.customer.username}}</h1>
+<p>Please take a printout of this bill</p>
+<h4>Order Id: {{invoice.id}}</h4>
+<h4>Delivery Address: {{invoice.deliveryaddress}}</h4>
+<h4>Order Status: {{invoice.status}}</h4>
+<h4>Dated: {{invoice.orderdate}}</h4>

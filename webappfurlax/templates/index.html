@@ -1,0 +1,94 @@
+{% include 'header.html' %}
+
+{% comment %} <div class="bd-example">
+  <div
+    id="carouselExampleCaptions"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/images/sofa.jpeg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Perfect Home</h5>
+          <p>Make your picture perfect home with us!!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/lounge.webp" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Explore your living</h5>
+          <p>A better way of living without actually buying</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/dining.webp" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Enjoy the stay</h5>
+          <p>Let us help you make your home a better place to live in</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div> {% endcomment %}
+<div class="container h-25 category">
+    <h3 class="text-center title">Browse By Category</h3>
+    <div class="row">
+      <div class="col-md-4 mb-0 mt-4">
+      <a href="{% url 'item' 'bedroom' %}"> <img src="/static/images/bed.jpeg" class="w-100 h-75 mx-auto d-block"/></a>
+            <p>Bedroom</p>
+        </div>
+        <div class="col-md-4 mb-0 mt-4">
+        <a href="{% url 'item' 'living' %}"><img src="/static/images/dining.webp" class="w-100 h-75 mx-auto d-block"/></a>
+            <p>Living Room</p>
+        </div>
+        <div class="col-md-4 mb-0 mt-4">
+        <a href="{% url 'item' 'study' %}"> <img src="/static/images/table.jpeg" class="w-100 h-75 mx-auto d-block"/></a>
+            <p>Study</p>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+
+

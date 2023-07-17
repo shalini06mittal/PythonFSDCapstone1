@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+  <h3 class="text-center title mb-5">{{title.title}} Items On Rent</h3>
+  {% if not items %}
+  <p>No items added yet</p>
+  {% endif %}
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+   {% for item, rental in items %}
+    <div class="col">
+      <div class="card" style="width: 18rem">
+        <img src="{{item.imageurl}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}} - {{item.size}} size</h5>
+          <p>{{rental.tenure}} months</p>
+          <p>{{rental.ratepermonth}} per month</p>
+          <a href="{{title}}/{{item.id}}" class="btn bgpurple cpink">Details</a>
+        </div>
+      </div>
+    </div>  
+    {% comment %}
+    <div class="col-md-5">
+      <img src="{{option.imageurl}}" class="img-fluid" width="60%" />
+      <p>{{item.name}}</p>
+      <p>{{rental.tenure}} months</p>
+      <p>{{rental.ratepermonth}} per month</p>
+    </div>{% endcomment %}
+     {% endfor %}
+  </div>
+</div>

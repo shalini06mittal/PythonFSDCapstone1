@@ -1,0 +1,37 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+<h1> Orders Placed</h1>
+
+<div class='row mb-3'>
+    <div class='col-md-3'>
+        <h4 class='cpurple'>Invoice Id</h4>
+    </div>
+    <div class='col-md-3'>
+        <h4 class='cpurple'>Order Date</h4>
+    </div>
+    <div class='col-md-3'>
+        <h4 class='cpurple'> Amount</h4>
+    </div>
+    <div class='col-md-3'>
+        <h4 class='cpurple'>Status</h4>
+    </div>
+</div>
+<hr/>
+    {% for invoice in invoices %}
+    <div class='row mb-3'>
+        <div class='col-md-3'>
+            <p>{{invoice.id}}</p>
+        </div>
+        <div class='col-md-3'>
+            <p>{{invoice.orderdate}}</p>
+        </div>
+        <div class='col-md-3'>
+            <p>{{invoice.invoiceamount}}</p>
+        </div>
+        <div class='col-md-3'>
+            <p>{{invoice.status}}</p>
+        </div>
+    </div>
+    <hr/>
+    {% endfor %} 
+</div>

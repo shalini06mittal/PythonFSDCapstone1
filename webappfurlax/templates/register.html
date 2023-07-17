@@ -1,0 +1,39 @@
+{% include 'header.html' %}
+
+<div class="container login">
+    <h1>Please Register</h1>
+    <form method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="exampleInputid1" class="form-label">User Name</label>
+         <input type="text" class="form-control" name="username">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputid1" class="form-label">First Name</label>
+         <input type="text" class="form-control" name="fname">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputid1" class="form-label">Last Name</label>
+         <input type="text" class="form-control" name="lname">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputid1" class="form-label">Address</label>
+         <textarea class="form-control" name="address" row="4"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputid1" class="form-label">Email</label>
+         <input type="email" class="form-control" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputid1" class="form-label">Phone</label>
+         <input type="text" class="form-control" name="phone">
+      </div>
+      <button class="btn bgpurple cpink" type="submit">REGISTER</button>
+    </form> 
+  </div>
+
+  {% include 'footer.html' %}

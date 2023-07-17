@@ -1,0 +1,31 @@
+{% include 'header.html' %}
+
+<div class ="container">
+  <form action="/addTocart/{{furniture.category.type}}/{{furniture.id}}">
+  <div class="row mt-5">
+    
+      <div class="col-md-6">
+        {% if request.GET.message%}<div class="message">{{ request.GET.message }}</div>{% endif %}
+        {% if request.GET.msg%}<div class="message">{{ request.GET.msg }}</div>{% endif %}
+        <p><img src="{{furniture.imageurl}}" class="img-fluid"/></p>
+        {% comment %} <p><a href="/addTocart/{{furniture.category.type}}/{{furniture.id}}" id="cart" class="btn bgpurple cpink">Add To Cart</a><p> {% endcomment %}
+          <p><button  id="cart" class="btn bgpurple cpink">Add To Cart</button><p>
+      </div>
+      <div class="col-md-2">  
+      </div>
+      <div class="col-md-4 mt-5">
+        <h3>{{furniture.name}}</h3>
+        <p>{{furniture.description}}</p>
+        <p>Size : {{furniture.size}}<p>
+        <p>Color: {{furniture.color}}<p>
+          {% for rental in rentals  %}
+            <p><input type='radio' name='rental' {% if rental.tenure == 3 %}checked{% endif %}
+               id="{{rental.id}}" value="{{rental.id}}"/> {{rental.tenure}} months : {{rental.ratepermonth}} per month </p>
+          {% endfor %}
+          <p>Condition: {{furniture.condition}}<p>
+          <p>Delivered By: {{deldate}}<p>
+      </div>
+  </div>
+</form>
+</div>
+{% include 'footer.html' %}

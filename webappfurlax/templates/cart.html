@@ -1,0 +1,59 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+<h1> Cart Items</h1>
+<p class="text-right"><a  id="cart"  href="/checkout" class="btn bgpurple cpink">Checkout</a><p>
+<div class='row mb-3'>
+    <div class='col-md-2'>
+    </div>
+    <div class='col-md-2'>
+        <h4 class='cpurple'>Product</h4>
+    </div>
+    <div class='col-md-2'>
+        <h4 class='cpurple'>Delivery Date</h4>
+    </div>
+    <div class='col-md-2'>
+        <h4 class='cpurple'>Tenure</h4>
+    </div>
+    <div class='col-md-2'>
+        <h4 class='cpurple'>Price</h4>
+    </div>
+    <div class='col-md-2'>
+        <h4 class='cpurple'>Amount</h4>
+    </div>
+</div>
+<hr/>
+    {% for item in cartitems %}
+    <div class='row mb-3'>
+        <div class='col-md-2'>
+            <img src="{{item.imageurl}}" class="img-fluid" alt="..." />
+        </div>
+        <div class='col-md-2'>
+            <p>{{item.name}}</p>
+        </div>
+        <div class='col-md-2'>
+            <p>{{item.deldate}}</p>
+        </div>
+        <div class='col-md-2'>
+            <p>{{item.tenure}} months</p>
+        </div>
+        <div class='col-md-2'>
+            <p>{{item.price}}</p>
+        </div>
+        <div class='col-md-2'>
+    
+            <p>{% widthratio item.price 1 item.tenure%}</p>
+        </div>
+    </div>
+    {% endfor %} 
+    <hr/>
+    <div class='row'>
+        <div class='col-md-7'>
+        </div>
+        <div class='col-md-3'>
+            <p>Total Amount to be paid :</p>
+        </div>
+        <div class='col-md-2'>
+            {{total}}
+        </div>
+    </div>
+</div>
