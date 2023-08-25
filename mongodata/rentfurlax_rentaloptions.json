@@ -1,0 +1,65 @@
+db.rentfurlax_rentaloptions.insertMany([{
+  "_id": {
+    "oid": "64a1a10fde2885d3e0af2409"
+  },
+  "id": 13,
+  "tenure": 3,
+  "ratepermonth": 1200,
+  "furniture_id": 4
+},{
+  "_id": {
+    "oid": "64a1a10fde2885d3e0af240a"
+  },
+  "id": 14,
+  "tenure": 6,
+  "ratepermonth": 1120,
+  "furniture_id": 4
+},{
+  "_id": {
+    "oid": "64a1a10fde2885d3e0af240b"
+  },
+  "id": 15,
+  "tenure": 9,
+  "ratepermonth": 1080,
+  "furniture_id": 4
+},{
+  "_id": {
+    "oid": "64a1a10fde2885d3e0af240c"
+  },
+  "id": 16,
+  "tenure": 12,
+  "ratepermonth": 1000,
+  "furniture_id": 4
+},{
+  "_id": {
+    "oid": "64a1c1f40f0d55db2e993edf"
+  },
+  "id": 17,
+  "tenure": 3,
+  "ratepermonth": 540,
+  "furniture_id": 5
+},{
+  "_id": {
+    "oid": "64a1c1f40f0d55db2e993ee0"
+  },
+  "id": 18,
+  "tenure": 6,
+  "ratepermonth": 500,
+  "furniture_id": 5
+},{
+  "_id": {
+    "oid": "64a1c1f40f0d55db2e993ee1"
+  },
+  "id": 19,
+  "tenure": 9,
+  "ratepermonth": 470,
+  "furniture_id": 5
+},{
+  "_id": {
+    "oid": "64a1c1f40f0d55db2e993ee2"
+  },
+  "id": 20,
+  "tenure": 12,
+  "ratepermonth": 420,
+  "furniture_id": 5
+}])

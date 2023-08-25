@@ -1,0 +1,4 @@
+pytz
+django==4.0.10
+djongo
+pymongo==3.12.3

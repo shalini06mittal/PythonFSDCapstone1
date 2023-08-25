@@ -1,0 +1,27 @@
+db.rentfurlax_furniture.insertMany([{
+  "_id": {
+    "oid": "64a1a10fde2885d3e0af2408"
+  },
+  "id": 4,
+  "name": "Dining Table 4 seater",
+  "description": "A mid-rise wooden dining table set complete with 4 low lying chairs. The neutral upholstery is ideal for an elegant looking living room",
+  "condition": "good as new",
+  "noofdays": 4,
+  "color": "Natural Teak/ Dark Brown",
+  "size": "30x36x48",
+  "imageurl": "https://cdn.rentickle.com/media/catalog/product/cache/3/thumbnail/1024x576/b58515f018eb873dafa430b6f9ae0c1e/4/_/4_seater_product.png",
+  "category_id": 3
+},{
+  "_id": {
+    "oid": "64a1c1f40f0d55db2e993ede"
+  },
+  "id": 5,
+  "name": "Magnum wardrobe",
+  "description": "Compact is what you need, and compact is what you get with the Magnum wardrobe. ",
+  "condition": "good",
+  "noofdays": 10,
+  "color": "Natural brown",
+  "size": "16L x 18B x 71H inches",
+  "imageurl": " https://www.ikea.com/in/en/images/products/musken-wardrobe-with-2-doors-3-drawers-brown__0858871_pe524345_s5.jpg?f=m",
+  "category_id": 1
+}])

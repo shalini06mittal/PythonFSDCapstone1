@@ -1,0 +1,19 @@
+db.rentfurlax_category.insertMany([{
+  "_id": {
+    "oid": "64a1887d92efd2fb593a02bf"
+  },
+  "id": 1,
+  "type": "study"
+},{
+  "_id": {
+    "oid": "64a1888392efd2fb593a02c0"
+  },
+  "id": 2,
+  "type": "bedroom"
+},{
+  "_id": {
+    "oid": "64a1888a92efd2fb593a02c1"
+  },
+  "id": 3,
+  "type": "living"
+}])

@@ -1,0 +1,5 @@
+_id,date_joined,email,first_name,id,is_active,is_staff,is_superuser,last_login,last_name,password,username
+649d274ce3024c2f08b79789,2023-06-29T06:40:12.742Z,,,1,true,true,true,2023-07-16T16:46:29.748Z,,pbkdf2_sha256$320000$Ip3w0qLZSoWfJZsd7UHCkL$H0kXBOaw6NGMiQPUIcNMOSP7H4TWKOtG+ohw0zPxYvU=,admin
+649dae1a3d46cd3ccdf8cbe2,2023-06-29T16:15:22.000Z,pmittal@gmail.com,Palash,2,true,false,false,2023-07-03T05:46:31.907Z,Mitttal,pbkdf2_sha256$320000$7BCiKhWDUEz8uuj0BjcmYA$k3EU6+eYdtR/THcnbAxA6Czx1/Fj1up87UPROTi+og8=,palash
+64a26147fd7aa6df5b03e579,2023-07-03T05:48:55.931Z,shalini@gmail.com,shalini,4,true,false,false,2023-07-17T11:20:01.877Z,kumar,pbkdf2_sha256$320000$JKOK96eg51ULOKycrkS1g6$9tQIFv4fwUtnLhLppPNLc5Se8vq2HWm+H9x8m3Lrntw=,shalini
+64b41c422ff2139a9447ccdd,2023-07-16T16:35:13.954Z,kshitij@gmail.com,kshitij,6,true,false,false,2023-07-17T11:27:59.721Z,mittal,pbkdf2_sha256$320000$1SLdnJlqznHm2mYJpVdmFN$1v2Meu7wa3ij62g89iHCqma6YG6Yfn9946WkxTuqwqo=,kshitij

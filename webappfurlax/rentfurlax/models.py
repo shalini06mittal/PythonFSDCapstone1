@@ -29,7 +29,7 @@ FO
 1 brown king img2
 
 '''
-
+#2 study, 2 living, 3 bedroom
 class Furniture(models.Model):
     name=models.CharField(max_length=200)
     description=models.CharField(max_length=500)

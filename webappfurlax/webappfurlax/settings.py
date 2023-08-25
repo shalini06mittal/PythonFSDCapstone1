@@ -82,8 +82,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'rentfurlax',
-        'HOST': '127.0.0.1',
-        'PORT': 27017,
+        # 'HOST': '127.0.0.1',
+        # 'PORT': 27017,
+        'CLIENT': {
+            'host': 'mongodb://mongodb:27017',
+            'username': 'root',
+            'password': 'mongoadmin'
+        }
     } 
 }
 
